@@ -1,0 +1,12 @@
+{
+    "file_format_name" : "stackexchange_ff",
+
+    "schedule_path" : "schedule.json",
+    "checkpoint_path" : "checkpoint.json",
+    "loading_log" : "loading_log.txt",
+    "copy_log" : "copy_log.txt",
+    
+    "target_q_dir" : "questions",
+    "target_a_dir" : "answers",
+    "dbt_project_path" : "FIX ME"
+}
