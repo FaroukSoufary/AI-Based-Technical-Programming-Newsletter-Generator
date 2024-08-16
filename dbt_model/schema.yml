@@ -1,0 +1,9 @@
+# models/schema.yml
+
+version: 2
+
+models:
+  - name: stg_question_answer
+    description: "Table to hold joined data of questions and answers"
+    config:
+      materialized: table
