@@ -148,13 +148,21 @@ def load_data_to_snowflake(**kwargs):
 
 def generate_newsletter():
 
+
+    snowflake_user = os.getenv('SNOWFLAKE_USER')
+    snowflake_password = os.getenv('SNOWFLAKE_PASSWORD')
+    snowflake_acc = os.getenv('SNOWFLAKE_ACCOUNT')
+    snowflake_wh = os.getenv('SNOWFLAKE_WH')
+    snowflake_db = os.getenv('SNOWFLAKE_DB')
+    snowflake_schema = os.getenv('SNOWFLAKE_SCHEMA')
+
     conn = snowflake.connector.connect(
-        user='fsoufary',
-        password='$(echoLiiamra1)',
-        account='lm93303.eu-central-1',
-        warehouse='compute_wh',
-        database='pfe2024',
-        schema='stackoverflow'
+        user=snowflake_user,
+        password=snowflake_password,
+        account=snowflake_acc,
+        warehouse=snowflake_wh,
+        database=snowflake_db,
+        schema=snowflake_schema
     )
 
     cursor = conn.cursor()
