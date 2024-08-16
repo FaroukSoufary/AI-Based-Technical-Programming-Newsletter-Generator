@@ -22,7 +22,7 @@ dag = DAG(
     'stackoverflow_weekly_ingestion',
     default_args=default_args,
     description='Retrieve StackOverflow questions and answers from the last week and load them into Snowflake',
-    schedule_interval=timedelta(weeks=1),
+    schedule_interval='0 9 * * 1' # Cron expression for every Monday at 9:00 AM
 )
 
 
