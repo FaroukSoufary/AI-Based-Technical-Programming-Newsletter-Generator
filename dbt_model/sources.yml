@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: azure_answers_stage
+    database: pfe2024
+    schema: stackoverflow
+    tables:
+      - name: azure_answers_stage
+
+  - name: azure_questions_stage
+    database: pfe2024
+    schema: stackoverflow
+    tables:
+      - name: azure_questions_stage
