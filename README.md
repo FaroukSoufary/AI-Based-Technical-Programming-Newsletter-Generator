@@ -25,6 +25,10 @@ To reproduce this work, you will need the following:
 - dbt (Data Build Tool).
 - Python.
 - A StackExchange API key (create an account on StackExchange and generate an API key from the settings section).
+- Snowflake python connector
+     ```bash
+     pip install snowflake-connector-python
+     ```
 
 ## Setup Instructions
 
